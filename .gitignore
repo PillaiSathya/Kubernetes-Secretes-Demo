@@ -1,0 +1,16 @@
+# Ignore Kubernetes config files (optional)
+*.kubeconfig
+
+# Ignore logs
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/IDE settings
+.vscode/
+.idea/
+
+# Ignore secret YAMLs (optional)
+secret*.yaml

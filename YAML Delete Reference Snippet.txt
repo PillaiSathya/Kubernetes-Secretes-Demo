@@ -1,0 +1,42 @@
+
+🧾 YAML Delete Reference Snippet
+✅ If you created a resource using a YAML file:
+bash
+Copy
+Edit
+kubectl apply -f resource.yaml
+You can delete it using:
+
+bash
+Copy
+Edit
+kubectl delete -f resource.yaml
+✅ If you want to delete by name (from metadata):
+Example YAML:
+
+yaml
+Copy
+Edit
+metadata:
+  name: shobi-blue-pod
+Then delete with:
+
+bash
+Copy
+Edit
+kubectl delete pod shobi-blue-pod
+⚠️ Common Mistakes:
+❌ kubectl delete pod royalpod.yaml
+
+❗ Incorrect: Treats royalpod.yaml as a pod name, not a file.
+
+✅ kubectl delete -f royalpod.yaml
+
+✔ Correct: Deletes the resource defined inside the file.
+
+✅ kubectl delete pod <actual-metadata-name>
+
+✔ Correct: Deletes using the name from the YAML's metadata section.
+
+🧠 Pro Tip:
+Use kubectl get pods or kubectl get all to list running resources before deleting anything.

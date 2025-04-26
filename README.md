@@ -58,7 +58,7 @@ Copy
 Edit
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("c2hvYml1c2Vy"))
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("c2hvYmlAMTIz"))
-
+Secrets are base64-encoded by default (not encrypted)"
 
 📦 Part 2: Secrets via Volume Mount
 

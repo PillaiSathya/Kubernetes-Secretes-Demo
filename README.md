@@ -109,7 +109,9 @@ Sometimes kubectl logs may not show output due to:
 
 🪟 PowerShell quirks
 
-📦 Minimal images not logging properly
+📦 Minimal images not logging properly"
+
+"⚡ Secret key names must exactly match between Secret and Pod YAML."
 
 ✍️ Author
 Sathya – DevOps Explorer 🌐
